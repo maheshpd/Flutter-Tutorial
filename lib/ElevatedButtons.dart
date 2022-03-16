@@ -9,6 +9,9 @@ class ElevatedButtons extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Elevated Button Tutorial'),
       ),
+      body: const Center(
+        child: Text('Hello'),
+      ),
     );
   }
 }
