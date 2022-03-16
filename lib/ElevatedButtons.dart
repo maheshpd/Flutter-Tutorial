@@ -9,8 +9,20 @@ class ElevatedButtons extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Elevated Button Tutorial'),
       ),
-      body: const Center(
-        child: Text('Hello'),
+      body:  Center(
+        child:  Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+             ElevatedButton(
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Elevated Button Pressed'))
+                );
+              },
+              child: const Text('Click Me'),
+            )
+          ],
+        )
       ),
     );
   }
