@@ -8,6 +8,7 @@ import 'package:flutter_tutoial/Containers.dart';
 import 'package:flutter_tutoial/DataTables.dart';
 import 'package:flutter_tutoial/ElevatedButtons.dart';
 import 'package:flutter_tutoial/FlatButtons.dart';
+import 'package:flutter_tutoial/GridViews.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: FlatButtons(),
+      home: GridViews(),
     );
   }
 }
